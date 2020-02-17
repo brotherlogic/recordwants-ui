@@ -1,23 +1,6 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Here's a list of servers:
+  Here's a list of the servers:
 </p>
-
-<script>
-var echoService = new proto.discovery.DiscoveryServiceV2Client('http://73.162.90.182:50055');
-
-var request = new proto.discovery.GetRequest();
-var metadata = {'custom-header-1': 'value1'};
-var call = echoService.echo(request, metadata, function(err, response) {
-  if (err) {
-    console.log(err.code);
-    console.log(err.message);
-  } else {
-    console.log(response.getMessage());
-  }
-});
-</script>
-
-<script src="https://raw.githubusercontent.com/brotherlogic/discovery/master/proto/discovery_pb.js"></script>
-<script src="https://raw.githubusercontent.com/brotherlogic/discovery/master/proto/discovery_grpc_web_pb.js"></script>
+<button (click)="show()">Click</button>
 
