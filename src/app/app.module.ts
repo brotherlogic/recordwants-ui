@@ -21,7 +21,6 @@ export function provideConfig() {
 @NgModule({
   declarations: [
     AppComponent,
-    SocialLoginModule,
     SigninComponent,
     FirstComponent,
   ],
