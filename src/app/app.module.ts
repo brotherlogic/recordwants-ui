@@ -5,6 +5,7 @@ import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-logi
 
 import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
+import { FirstComponent } from './first/first.component';
 
 let config = new AuthServiceConfig([
   {
@@ -25,7 +26,8 @@ export function provideConfig() {
   declarations: [
     AppComponent
     SocialLoginModule,
-    SigninComponent
+    SigninComponent,
+    FirstComponent
   ],
   imports: [
     BrowserModule
