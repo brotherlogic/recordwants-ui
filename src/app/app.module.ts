@@ -10,12 +10,12 @@ import { FirstComponent } from './first/first.component';
 let config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
-    provider: new GoogleLoginProvider("Google-OAuth-Client-Id")
+    provider: new GoogleLoginProvider("Google-OAuth-Client-Id"),
   },
   {
     id: FacebookLoginProvider.PROVIDER_ID,
-    provider: new FacebookLoginProvider("Facebook-App-Id")
-  }
+    provider: new FacebookLoginProvider("Facebook-App-Id"),
+  },
 ]);
  
 export function provideConfig() {
@@ -24,18 +24,18 @@ export function provideConfig() {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
     SocialLoginModule,
     SigninComponent,
-    FirstComponent
+    FirstComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [
-  	     provide: AuthServiceConfig,
-	     useFactory: provideConfig
+  	provide: AuthServiceConfig,
+	  useFactory: provideConfig,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
