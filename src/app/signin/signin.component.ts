@@ -18,7 +18,7 @@ export class SigninComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   signInWithGoogle(): void {
-  this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
+    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
   }
 
   signOut(): void {

@@ -1,1 +1,6 @@
-<p>signin works!</p>
+<div *ngIf="!user">
+<button class="btn btn-social-icon btn-google" (click)="signInWithGoogle()">SignIn</button>
+</div>
+<div *ngIf="user">
+ <app-first></app-first>
+</div>
