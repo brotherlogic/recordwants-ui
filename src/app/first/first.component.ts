@@ -27,7 +27,7 @@ export class FirstComponent implements OnInit {
   private user: SocialUser;
   private loggedIn: boolean;
  
-  private loginUrl = 'https://73.162.90.182:50049/login.LoginService/Login';
+  private loginUrl = 'https://brotherlogic-backend.com/login.LoginService/Login';
 
   constructor(private authService: AuthService, private http: HttpClient) { }
  
