@@ -42,7 +42,7 @@ export class FirstComponent implements OnInit {
 
       if (this.loggedIn) {
         console.log("Sending off token");
-        var req = {token:"blah"};
+        var req = {token:user.idToken};
        var resp = this.http.post<LoginResponse>(this.loginUrl, req, httpOptions);
        console.log(resp.subscribe());
       }
